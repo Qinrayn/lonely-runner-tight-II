@@ -1,0 +1,39 @@
+# Process / working files (not for publication)
+NEW_CHAT_PROMPT.md
+final_report.md
+progress_report.md
+kgw_family.md
+unified_proof.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# LaTeX auxiliary
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+# ...but keep the run logs referenced by the paper's data statement
+!two_swap_census.log
+!q_density.log
+
+# Root-level duplicates (canonical copy in paper/)
+/tight_instances_full.tex
+/tight_instances_full.pdf
+
+# Data outputs (large; archived on Zenodo separately)
+*.json
+
+# Submission bundle (regenerated from sources)
+/arxiv_submission.tar
+
+# OS
+.DS_Store
+Thumbs.db

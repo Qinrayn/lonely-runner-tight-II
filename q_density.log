@@ -1,0 +1,39 @@
+================================================================
+(L1') windows at 1/q are exactly the adjacent components
+================================================================
+  instances checked: 14742, mismatches: 0
+================================================================
+(L2') edge reach: covering the inner edge forces w >= m0(n-q)
+================================================================
+  covering intervals: 3388, violations: 0
+================================================================
+(T) density inequality (*): crude lemma, exact thresholds, limit
+================================================================
+  crude lemma (n >= max(40,10q)) failures: [] (count 0)
+  exact thresholds n0(q):
+    q=  2: n0=20
+    q=  3: n0=28
+    q=  4: n0=36
+    q=  5: n0=45
+    q=  6: n0=53
+    q=  8: n0=69
+    q= 10: n0=86
+    q= 15: n0=127
+    q= 20: n0=169
+    q= 30: n0=251
+    q= 50: n0=417
+    q= 80: n0=665
+  gamma = 0.120847; failures for q <= (gamma-1/50)n, n<=3000: [] (count 0)
+  max working q at sample n: {100: (11, 0.11), 500: (60, 0.12), 2000: (241, 0.1205)}
+================================================================
+positive control: q = 2, parity-aware F reproduces r2_density.py
+================================================================
+  odd n working from 19; even from 20
+================================================================
+(S) deletion values: r=2 closed form and sandwich check (exact)
+================================================================
+  LR([n-1]\{r}) >= 1/(n-1), all (n,r), n in [4,30]: failures [] (count 0)
+  equality 1/(n-1) attained only at r=n-1: violations [] (count 0)
+  r=2 closed form 2/(2*floor(n/2)+3), n in [5,30]: mismatches []
+================================================================
+ALL CHECKS PASSED
